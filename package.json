@@ -5,10 +5,13 @@
   "type": "module",
   "scripts": {
     "build": "rimraf dist && npx tsc",
-    "prestart": "npm run build",
-    "start": "node dist/index.js",
-    "serve": "npx tsc -w & nodemon dist/index.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "cross-env NODE_ENV=test jest --watchAll --coverage",
+    "run": "tsc -w",
+    "start": "cross-env NODE_ENV=prod node dist/index.js",
+    "start:dev": "cross-env DEBUG=GDR* NODE_ENV=dev PORT=3400 node --env-files=.env --watch dist/index.js ",
+    "start:mon": "cross-env DEBUG=GDR* NODE_ENV=dev PORT=3400 nodemon  dist/index.js",
+    "render": "dist/index.js",
+    "prepare": "husky"
   },
   "keywords": [],
   "author": "Daniele Quintiliani",

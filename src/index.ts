@@ -6,7 +6,7 @@ import { dbConnect } from "./tools/db.connect.js";
 
 const debug = createDebug("GDR:Server");
 
-const port = process.env.PORT || 3000;
+const port = process.env.PORT || 3400;
 const app = createApp();
 const server = createServer(app);
 

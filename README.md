@@ -28,3 +28,4 @@ src/
 **tool**: Funciones de utilidad y helpers.  
 **app.ts**: Archivo principal de configuración de la aplicación.  
 **index.ts**: Punto de entrada de la aplicación.
+"# GDR_Back" 

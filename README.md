@@ -23,9 +23,8 @@ src/
 **controller**: Contiene los controladores que gestionan las solicitudes HTTP.  
 **entities**: Define las entidades o esquemas de datos.  
 **middleware**: Contiene middleware personalizado.  
-**model**: Define los modelos de datos y la lógica de acceso a datos.  
+**Service**: Authorizacion service.  
 **router**: Define las rutas y asocia cada ruta con un controlador.  
-**tool**: Funciones de utilidad y helpers.  
+**tools**: Funciones de utilidad y helpers.  
 **app.ts**: Archivo principal de configuración de la aplicación.  
 **index.ts**: Punto de entrada de la aplicación.
-"# GDR_Back" 

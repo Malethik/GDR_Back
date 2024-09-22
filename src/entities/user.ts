@@ -3,7 +3,7 @@ export interface User {
   name: string;
   password: string;
   avatar?: string;
-  char: "ADMIN" | "USER";
+  role: "ADMIN" | "USER";
 }
 
 export type UserCreateDto = {
